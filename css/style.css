@@ -1,0 +1,307 @@
+/* html {
+  scroll-behavior: smooth;
+}
+body {
+    background-color: antiquewhite;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.rectangle {
+  border: 2px solid black;
+  width: 100vw;
+  height: 10vh;
+  transition: all 2s ease-in-out;
+
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  gap: 5px;
+}
+
+.rectangle:hover {
+  height: 15vh;
+}
+
+
+.button {
+  width: 20vw;
+  height: 5vh;
+  font-size: 2rem;
+}
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+    filter: brightness(0.3);
+  }
+  
+  .navbar:hover {
+    filter: brightness(1);
+  }
+  .arr {
+    align-items: center;
+  }
+  .arrow {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    animation-fill-mode: forwards;
+  }
+
+  .navbar:hover .arrow {
+    animation-name: rotateArrow;
+    animation-duration: .5s;
+  }
+
+  @keyframes rotateArrow {
+    0% {transform: rotate(0deg);} 
+    100% {transform: rotate(180deg);}         
+  }
+  
+  .button ul {
+    display: flex;
+  }
+  
+  .button button {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    border-radius: 1.56rem;
+    border: 3px solid white;
+    width: 13rem;
+    height: 4rem;
+    font-family: "Source Code Pro", monospace;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem;
+    transition: all 0.5s;
+  }
+  
+  .button button:hover {
+    background-color: transparent;
+  }
+  /*
+  .button button::before {
+    content: "hallo";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    width: 100px;
+    height: 100px;
+    border-radius: 1.5625rem;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: fade 10s linear infinite;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .button button:hover::before {
+    opacity: 1;
+  } 
+  
+  
+  .btn1::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    width: 50%;
+    height: 100px;
+    border-radius: 1.5625rem;
+    background-size: 500%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: fade 10s linear infinite;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  
+    position: relative;
+  }
+  
+  .btn1:hover::before {
+    opacity: 1;
+  } 
+  
+  
+  @keyframes fade {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 400% 0;
+    }
+  } */
+  
+  .btn1 {
+    display: flex;
+  }
+
+  #btn3 {
+    width: 16rem;
+  }
+  
+  #btn4 {
+    width: 16rem;
+  }
+  
+  /* text */
+  
+  .content {
+    position: relative;
+    margin-top: 1rem;
+    height: auto;
+  }
+  .bgText {
+    font-family: "Source Code Pro", monospace;
+    font-size: 6.25rem;
+    color: white;
+    filter: opacity(0.15);
+    margin-left: 5rem;
+  }
+  
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(5%, auto);
+    margin-left: 5rem;
+    
+  }
+  .container {
+    position: absolute;
+    top: 5em;
+  }
+  
+  .hey {
+    font-family: "Source Code Pro", monospace;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    color: white;
+    grid-column: 1/3;
+  }
+  .name {
+    font-family: "Source Code Pro", monospace;
+    color: white;
+    font-size: 9.375rem;
+    width: auto;
+  }
+  .box1 {
+    grid-column: 1/3;
+    width: 50%;
+    
+    
+  }
+  
+  .text {
+    color: white;
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    width: 60%;
+    margin-left: 5rem;
+    margin-top: 4rem;
+  }
+  
+  .link {
+    font-family: "Source Code pro", monospace;
+    font-size: 2rem;
+    color: white;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    transition: all .5s ease;
+  }
+  
+  .link:hover {
+    font-size: 3rem;
+  }
+
+  .flex {
+      display: flex;
+      height: auto;
+      width: auto;
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 1070px) {
+    .grid {
+      flex-wrap: wrap;
+    }
+    li {
+      flex: 50%;
+    }
+    .box1 { 
+      width: 90%;
+    }
+  
+    .text {
+      font-size: 2rem;
+    }
+  
+    .hey {
+      font-size: 5rem;
+    }
+    .name {
+      font-size: 9.5rem;
+    }
+    .bgText {
+      font-size: 7rem;
+    }
+  
+    .link {
+      font-size: 2rem;
+    }
+    #linkBR::before{
+        content: "\a";
+        white-space: pre;  
+    }
+    .link:hover {
+      font-size: 2.5rem;
+    }
+    .arr {
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+  }

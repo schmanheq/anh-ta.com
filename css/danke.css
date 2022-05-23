@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Section 1*/ 
+.sec1 {
+  background-color: black;
+  height: auto;
+}
+.heading1 {
+  font-family: "Square Peg", cursive;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+.line {
+  width: 70%;
+}
+
+.text1 {
+  display: flex;
+  width: auto;
+  font-family: "Source Code Pro", monospace;
+  font-size: .8rem;
+  margin-top: 3rem;
+  margin-left: 1rem; 
+  margin-right: 1rem;
+  text-align: left;
+  color: white;
+}
+.signature {
+  font-family: "Square Peg", cursive;
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-top: 0;
+  color: white;
+
+  display: flex;
+
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+.arrow {
+  position: relative;
+  width: 4.5rem;
+  height: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Section 2*/ 
+
+.sec2 {
+  background-image: linear-gradient(black, #003478);
+  height: 100vh;
+}
+
+.sec2head1 {
+  font-family: "Square Peg", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.grid {
+  
+  font-size: 2rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(5%, auto);  
+  border: 2px solid white;
+
+  
+  
+}
+
+.elemen {
+  display: flex;
+  border: 2px solid white ;
+  
+  
+}
+
+.el1 {
+  font-family: "Moo Lah Lah", monospace;
+  font-size: 7rem;
+  color: rgb(240, 64, 64);
+  grid-column: 1/3;
+  grid-row: 1/2;
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.el2 {
+  font-family: "Tapestry", monospace;
+  font-size: 3.5rem;
+  grid-row: 1/3;
+  justify-content: center;
+  align-items: center;
+  color: rgb(243, 230, 44);
+  
+}
+
+.el3 {
+  font-family: "BIZ UDMincho", monospace;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+
+.el4 {
+  font-family: "Genos", monospace;
+  font-size: 4rem;
+  color: rgb(52, 218, 52);
+
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.el5 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 3.5rem;
+  line-height: 100px;
+
+  grid-column: 2/4;
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  display: grid;
+}
+
+.el6 {
+  font-family: "Genos", monospace;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  color: rgb(147, 64, 230);
+}
+
+.el7 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+  color: rgb(252, 182, 52);
+}
+
+.el8 {
+  color: aqua;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+}
+
+.img1 {
+  height: 21.75rem;
+  width: 12.5rem;
+}
+/* blue to yellow */ 
+#blueToYellow {
+  background-image: linear-gradient(#003478, #f8f1b1);
+  height: 5rem;
+}
+
+/* Section 3 */ 
+
+/* standard sec 3 */ 
+
+
+.sec3 {
+  background-color: #f8f1b1;
+  margin: auto;
+  height: auto; 
+}
+
+#headingSec3 {
+  font-family: "Square Peg", cursive;
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.element {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  position: relative;
+  
+  
+}
+
+.element::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.heading {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  font-family: 'Helvetica';
+  display: flex;
+  justify-content: center;
+  
+}
+
+.wrapper{
+  display: flex;
+}
+
+
+.text {
+  font-family: 'Source Code Pro';
+  font-weight: 500;
+  z-index: 1;
+  text-align: justify;
+}
+
+.sec3Dank {
+  font-size: 1.5rem;
+  
+}
+
+
+/* Individuel */ 
+
+/* Eunice */ 
+.eunshiba {
+  height: 4.5rem;
+  border-radius: 50px;
+}
+
+/* Franzi */ 
+.drunkenFranzi, .imgFranzi {
+  display: none;
+}
+
+
+/* Greg */ 
+
+
+
+/* Vi Minh */ 
+.ViMi {
+  font-size: 3rem;
+}
+
+/* Kathi und Nicki */
+.kn {
+  font-size: 2.5rem;
+}
+
+
+/* Mikka */ 
+
+
+@media screen and (min-width: 530px) {
+  .element {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(5%, auto);
+    gap: 1rem;
+  }
+
+  .break {
+    display: none;
+  }
+
+  /* Eunice */ 
+  .eun {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 6rem;
+  }
+  .eunshiba {
+    height: 8rem;
+  }
+
+  /* Franzi */ 
+  .element2 {
+    height: auto;
+  }
+  .wrapper {
+    display: grid;
+    
+    
+
+  }
+  .drunkenFranzi {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline;
+    height: 15rem;
+    border: 2px solid grey;
+    
+    
+  }
+
+  .imgFranzi {
+    z-index: 10;
+    display: inline-block;
+    border: 2px solid grey;
+    height: 17rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 530px) {
+
+  .heading1 {
+    font-size: 3.5rem;
+  }
+  .text1 {
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  .signature {
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+  }
+}

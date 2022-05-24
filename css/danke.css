@@ -6,6 +6,63 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  filter: brightness(0.3);
+}
+.navbar:hover {
+  filter: brightness(1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.arr1 {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: white;
+}
+
+a:hover {
+  color: rgb(236, 202, 48);
+}
+
+.gridButton {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  
+  flex-wrap: wrap;
+}
+
+.button {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  border-radius: 1.56rem;
+  border: 3px solid white;
+  background-color: transparent;
+  justify-content: space-around;
+  
+}
+
+.btn3 {
+  width: 10rem;
 }
 
 /* Section 1*/ 
@@ -81,22 +138,18 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(5%, auto);  
-  border: 2px solid white;
-
-  
-  
 }
 
 .elemen {
   display: flex;
-  border: 2px solid white ;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   
   
 }
 
 .el1 {
   font-family: "Moo Lah Lah", monospace;
-  font-size: 7rem;
+  font-size: 5rem;
   color: rgb(240, 64, 64);
   grid-column: 1/3;
   grid-row: 1/2;
@@ -108,7 +161,7 @@ body {
 
 .el2 {
   font-family: "Tapestry", monospace;
-  font-size: 3.5rem;
+  font-size: 3rem;
   grid-row: 1/3;
   justify-content: center;
   align-items: center;
@@ -151,7 +204,7 @@ body {
 
 .el6 {
   font-family: "Genos", monospace;
-  font-size: 4rem;
+  font-size: 3.5rem;
   letter-spacing: 1rem;
   color: rgb(147, 64, 230);
 }
@@ -164,6 +217,7 @@ body {
 
 .el8 {
   color: aqua;
+  font-size: 3rem;
 }
 
 .images {
@@ -210,6 +264,7 @@ body {
   position: relative;
   
   
+  
 }
 
 .element::before {
@@ -228,10 +283,11 @@ body {
   display: flex;
   justify-content: center;
   
+  
 }
 
 .wrapper{
-  display: flex;
+  display: grid;
 }
 
 
@@ -240,6 +296,7 @@ body {
   font-weight: 500;
   z-index: 1;
   text-align: justify;
+  
 }
 
 .sec3Dank {
@@ -281,71 +338,29 @@ body {
 
 
 @media screen and (min-width: 530px) {
+  
+  
+  /* Sec 2 */
+
+  .elemen {
+    font-size: 5rem;
+  }
+
+
+
+  /* Sec 3 */ 
   .element {
-    width: 80vw;
+    width: 50vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(5%, auto);
     gap: 1rem;
+    margin: auto;
   }
 
   .break {
     display: none;
   }
-
-  /* Eunice */ 
-  .eun {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 6rem;
-  }
-  .eunshiba {
-    height: 8rem;
-  }
-
-  /* Franzi */ 
-  .element2 {
-    height: auto;
-  }
-  .wrapper {
-    display: grid;
-    
-    
-
-  }
-  .drunkenFranzi {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: inline;
-    height: 15rem;
-    border: 2px solid grey;
-    
-    
-  }
-
-  .imgFranzi {
-    z-index: 10;
-    display: inline-block;
-    border: 2px solid grey;
-    height: 17rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
-  }
-  
-}
-
-
-
-
-
-
-
-
-@media screen and (min-width: 530px) {
 
   .heading1 {
     font-size: 3.5rem;
@@ -364,4 +379,59 @@ body {
     position: absolute;
     left: 20%;
   }
+
+  /* Eunice */ 
+  .eun {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 6rem;
+  }
+  .eunshiba {
+    height: 8rem;
+  }
+
+  /* Franzi */ 
+  .element2 {
+    height: auto;
+  }
+  .wrapper {
+    display: flex;
+    height: 10%;
+    width: 10%;
+    
+  }
+  .drunkenFranzi {
+    display: inline;
+    height: 20rem;
+    border: 2px solid grey;
+    z-index: 10;
+    position: absolute;
+    
+    
+   
+    
+  }
+
+  .imgFranzi {
+    z-index: 11;
+    display: block;
+    border: 2px solid grey;
+    height: 22rem;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    
+    
+  }
+  
 }
+
+
+
+
+
+
+
+

@@ -109,7 +109,7 @@
   .bgText {
     font-family: "Source Code Pro", monospace;
     font-size: 6.25rem;
-    color: aqua;
+    color: rgb(236, 253, 0);
     filter: opacity(0.15);
     margin-left: 5rem;
     opacity: 0;

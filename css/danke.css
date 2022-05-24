@@ -239,7 +239,9 @@ a:hover {
 /* Section 3 */ 
 
 /* standard sec 3 */ 
-
+img {
+  border: 2px solid grey;
+}
 
 .sec3 {
   background-color: #f8f1b1;
@@ -262,9 +264,7 @@ a:hover {
   padding: 1rem;
   border: 2px solid black;
   position: relative;
-  
-  
-  
+  display: grid;
 }
 
 .element::before {
@@ -282,6 +282,7 @@ a:hover {
   font-family: 'Helvetica';
   display: flex;
   justify-content: center;
+  
   
   
 }
@@ -320,18 +321,31 @@ a:hover {
 
 
 /* Greg */ 
+.GIL, .GregZocker {
+  display: none;
+}
 
+/* Jost */
+.picJost, .picJostII {
+  display: none;
+} 
 
+/* Kathi und Nicki */
+.kn {
+  font-size: 2.5rem;
+}
+
+/* Konsti */ 
+.picKonschti {
+  display: none;
+}
 
 /* Vi Minh */ 
 .ViMi {
   font-size: 3rem;
 }
 
-/* Kathi und Nicki */
-.kn {
-  font-size: 2.5rem;
-}
+
 
 
 /* Mikka */ 
@@ -358,6 +372,7 @@ a:hover {
     margin: auto;
   }
 
+  
   .break {
     display: none;
   }
@@ -380,6 +395,7 @@ a:hover {
     left: 20%;
   }
 
+  
   /* Eunice */ 
   .eun {
     display: flex;
@@ -404,26 +420,73 @@ a:hover {
   .drunkenFranzi {
     display: inline;
     height: 20rem;
-    border: 2px solid grey;
     z-index: 10;
     position: absolute;
-    
-    
-   
-    
   }
 
   .imgFranzi {
     z-index: 11;
     display: block;
-    border: 2px solid grey;
     height: 22rem;
     
     position: absolute;
     right: 0;
     bottom: 0%;
+  }
+
+  /* Greg */ 
+  .GIL {
+    display: block;
+    height: 15rem;
+    position: absolute;
+    bottom: 0;
     
-    
+    z-index: 11;
+  }
+  
+  .GregZocker {
+    display: block;
+    height: 15rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .gre {
+    z-index: 99;
+    position: absolute;
+    margin-left: 10rem;
+    top: 0;
+  }
+
+  /* Jost */
+  .picJost {
+    display: block;
+    height: 25rem;
+    margin: auto;
+  }
+
+  .picJostII {
+    display: block;
+    height: 18rem;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  /* Kathi Nicklas */
+
+  .kn {
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Konsti */ 
+  .picKonschti {
+    display: block;
+    margin: auto;
+    height: 20rem;
   }
   
 }

@@ -119,7 +119,7 @@ a:hover {
 
 .sec2 {
   background-image: linear-gradient(black, #003478);
-  height: 100vh;
+  height: auto;
 }
 
 .sec2head1 {
@@ -555,7 +555,7 @@ img {
 }
 
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1550px) {
   .element {
     width: 95vw;
   }

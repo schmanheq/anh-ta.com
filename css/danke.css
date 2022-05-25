@@ -265,6 +265,7 @@ img {
   border: 2px solid black;
   position: relative;
   display: grid;
+  
 }
 
 .element::before {
@@ -308,73 +309,29 @@ img {
 
 /* Individuel */ 
 
+.drunkenFranzi, .imgFranzi, .GIL, .GregZocker, .picJost, .picJostII, .picKonschti, .picVi, .picMinh, .picOlrik, .picNam, .picHoang, .picMikka, .picFloI, .picFloII {
+  display: none;
+}
+
 /* Eunice */ 
 .eunshiba {
   height: 4.5rem;
   border-radius: 50px;
 }
 
-/* Franzi */ 
-.drunkenFranzi, .imgFranzi {
-  display: none;
-}
-
-
-/* Greg */ 
-.GIL, .GregZocker {
-  display: none;
-}
-
-/* Jost */
-.picJost, .picJostII {
-  display: none;
-} 
-
 /* Kathi und Nicki */
 .kn {
   font-size: 2.5rem;
 }
 
-/* Konsti */ 
-.picKonschti {
-  display: none;
-}
 
 /* Vi Minh */ 
 .ViMi {
   font-size: 3rem;
 }
 
-.picVi, .picMinh {
-  display: none;
-}
 
-
-/* Olrik */ 
-.picOlrik {
-  display: none;
-}
-
-/* Nam */
-.picNam {
-  display: none;
-}
-/* Hoang */
-.picHoang {
-  display: none;
-}
-
-/* Mikka */ 
-.picMikka {
-display: none;}
-
-/* Flo */
-.picFloI, .picFloII {
-  display: none;
-}
-
-
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 850px) {
   
   
   /* Sec 2 */
@@ -596,6 +553,19 @@ display: none;}
     font-size: 1.1rem;
   }
 }
+
+
+@media screen and (max-width: 1350px) {
+  .element {
+    width: 95vw;
+  }
+  .greg, .paul, .hoang, .jost, .konsti1 {
+    font-size: 1.1rem;
+  }
+
+
+}
+
 
 
 

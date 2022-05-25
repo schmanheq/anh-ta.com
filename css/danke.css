@@ -345,10 +345,33 @@ img {
   font-size: 3rem;
 }
 
+.picVi, .picMinh {
+  display: none;
+}
 
 
+/* Olrik */ 
+.picOlrik {
+  display: none;
+}
+
+/* Nam */
+.picNam {
+  display: none;
+}
+/* Hoang */
+.picHoang {
+  display: none;
+}
 
 /* Mikka */ 
+.picMikka {
+display: none;}
+
+/* Flo */
+.picFloI, .picFloII {
+  display: none;
+}
 
 
 @media screen and (min-width: 530px) {
@@ -363,6 +386,7 @@ img {
 
 
   /* Sec 3 */ 
+
   .element {
     width: 50vw;
     display: grid;
@@ -372,7 +396,6 @@ img {
     margin: auto;
   }
 
-  
   .break {
     display: none;
   }
@@ -486,9 +509,92 @@ img {
   .picKonschti {
     display: block;
     margin: auto;
-    height: 20rem;
+    height: 30rem;
   }
   
+
+  /* Vi & Minh */
+   
+  .ViMi {
+    font-size: 4rem;
+  }
+
+  .picMinh, .picVi {
+    display: inline-block;
+    height: 17rem;
+    position: relative;
+    margin: 1rem;
+  }
+
+  .ViMinh {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  /* Olrik */
+  .picOlrik {
+    display: block;
+    position: relative;
+    height: 20rem;
+  }
+
+  .olrik {
+    font-size: 1.3rem;
+  }
+  .olr {
+    font-size: 5rem;
+  }
+
+  /* Nam */ 
+  .picNam {
+    display: block;
+    border-radius: 25px;
+    margin: auto;
+  }
+
+  /* Hoang */
+  .picHoang {
+    display: block;
+    height: 30rem;
+  }
+
+  /* Pauli */
+  .pau {
+    align-items: center;
+    font-size: 5rem;
+  }
+
+  /* Mikka */ 
+  .picMikka {
+    display: block;
+    height: 40rem;
+    margin: auto;
+  }
+  .Mikka {
+    font-size: 1.5rem;
+  }
+
+  /* Flo */
+  .picFloI {
+    display: block;
+    height: 40rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .picFloII {
+    display: block;
+    height: 20rem;
+    position: absolute;
+    z-index: 11;
+  }
+
+  .Florian {
+    font-size: 1.1rem;
+  }
 }
 
 

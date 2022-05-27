@@ -12,23 +12,56 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: auto;
   filter: brightness(0.3);
+  transition: all 0.5s;
 }
 .navbar:hover {
   filter: brightness(1);
 }
 
-ul {
-  list-style-type: none;
+.arrowNav {
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem 0 0 1rem;
+  border: none;
+  animation-fill-mode: forwards;
 }
 
-.arr1 {
-  height: 2rem;
-  width: 2rem;
-  margin: 1rem;
+.navbar:hover .arrowNav {
+  animation-name: rotateArrow;
+  animation-duration: .5s;
 }
+
+.buttonDanke {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  border-radius: 1.56rem;
+  border: 3px solid white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  color: white;
+  margin: .9rem;
+  margin-bottom: 0;
+  padding: .3rem;
+  align-items: center;
+}
+
+.divButton {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: minmax(5%, auto);
+
+}
+
+@keyframes rotateArrow {
+  0% {transform: rotate(0deg);} 
+  100% {transform: rotate(180deg);}         
+}
+
+
 
 a {
   text-decoration: none;
@@ -42,28 +75,9 @@ a:hover {
   color: rgb(236, 202, 48);
 }
 
-.gridButton {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(5%, auto);
-  
-  flex-wrap: wrap;
-}
 
-.button {
-  color: white;
-  font-family: "Source Code Pro", monospace;
-  font-size: 1rem;
-  border-radius: 1.56rem;
-  border: 3px solid white;
-  background-color: transparent;
-  justify-content: space-around;
-  
-}
 
-.btn3 {
-  width: 10rem;
-}
+
 
 /* Section 1*/ 
 .sec1 {
@@ -113,6 +127,7 @@ a:hover {
   width: 4.5rem;
   height: 5rem;
   margin-bottom: 5rem;
+  border: none;
 }
 
 /* Section 2*/ 
@@ -351,7 +366,19 @@ img {
 
 
 @media screen and (min-width: 1000px) {
-  
+  /* navbar */
+  .divButton {
+    display: flex;
+  }
+
+  .buttonDanke {
+    font-size: 1.5rem;
+  }
+
+  .arrowNav {
+    height: 4rem;
+    width: 4rem;
+  }
   
   /* Sec 2 */
 

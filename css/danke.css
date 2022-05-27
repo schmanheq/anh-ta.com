@@ -247,6 +247,7 @@ img {
   background-color: #f8f1b1;
   margin: auto;
   height: auto; 
+  
 }
 
 #headingSec3 {
@@ -329,6 +330,24 @@ img {
 .ViMi {
   font-size: 3rem;
 }
+
+/* Section 4 */ 
+
+.sec4 {
+  height: 100vh;
+  background-color: #e2e0d5;
+  margin-top: -.5rem;
+}
+
+.sec4Heading {
+  font-family: "Dancing SCript", cursive;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 3rem;
+  
+}
+
+
 
 
 @media screen and (min-width: 1000px) {
@@ -562,11 +581,9 @@ img {
   .greg, .paul, .hoang, .jost, .konsti1, .Florian {
     font-size: 1.2rem;
   }
-  .kani, .namKhang, {
+  .kani, .namKhang {
     font-size: 1.3rem;
   }
-
-
 }
 
 

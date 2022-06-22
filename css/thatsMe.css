@@ -1,49 +1,465 @@
 body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-}
-/* error page */
-.heading {
-    font-family: "Source Code Pro", monospace;
-    color: white;
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Source Code Pro", monospace;
 }
 
-.gif {
-    border: 5px solid black;
-    width: 55%;
-    display: block;
-    margin: auto;
+/* section 1 */
+
+.sec1 {
+  background-image: linear-gradient(180deg, #000,#191920);
+  display: block;
+  height: auto;
+}
+.thatsMeWrapper {
+  display: flex;
+  justify-content: center;
 }
 
-.release {
-    font-family: "Source Code Pro", monospace;
-    color: white;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
+.thatsMe {
+  font-family: "Source Code Pro", monospace;
+  font-size: 3rem;
+  background: linear-gradient(90deg,#833ab4, #fd1d1d, #fcb045);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  position: relative;
+  text-shadow: 1px 1px 50px rgb(251, 255, 7);
+}
+
+.thatsMe::before {
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 25%;
+  border-left: rgb(226, 166, 0) 5px solid;
+  border-top: rgb(226, 166, 0) 5px solid;
+  left: 0;
+  margin-left: -10px;
+  
+  
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.sec1Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  place-items: center;
+}
+
+.firstPic {
+  height: 10rem;
+  border: 1px rgb(87, 85, 85) solid;
+  border-radius: 20px 0 20px 0;
+}
+
+.name {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  color: rgb(34, 255, 5);
+  text-shadow: 4px 4px 1px #9a05fd;
+  
+  text-align: center;
+}
+
+.text {
+  display: block;
+  padding: .5rem;
+  margin: auto;
+  margin-top: .3rem;
+  width:90%;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  background-color: white;
+  color: #a8a8a8;
+  background-color: #000;
+  border: 1px solid orange;
+  overflow: hidden;
 }
 
 
 
 
+/* sec2 */
+.sec2 {
+  background-color: rgb(243, 243, 243);
+  display: block;
+  height: auto;
+}
 
-@media screen and (min-width: 1000px) {
-    
-    .heading {
-        font-size: 4rem;
-    }
+.sec2Heading {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  margin: 1rem;
+}
 
-    .gif {
-        width: 35%;
-    }
-    .break {
-        display: none;
-    }
+.wrapper {
+  font-family: "Source Code Pro", monospace;
+  width: 90vw;
+  margin: auto;
+  border: 2px solid rgb(1, 86, 126);
+  border-radius: 10px 0 10px 0;
+  height: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: minmax(5%, auto);
+  gap: 1rem;
+}
+
+.hvh {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.content {
+  font-size: .9rem;
+}
+
+.content1 {
+  display: flex;
+  align-items: center;
 }
 
 
+/*sec3*/
+
+/* sec3 heading */
+.sec3Heading {
+  font-size: 1.5rem;
+  font-family: "Source Code Pro", monospace;
+  margin-left: .5rem;
+  color: white;
+  text-shadow: 3px 3px rgb(121, 67, 67);
+}
+
+/* typing  */ 
+
+.typingWrapper {
+  color: white;
+  background-color: rgb(7, 130, 146);
+  border: 1px solid white;
+  border-radius: 10px 0 10px 0;
+  display: inline-block;
+  text-shadow: 2px 2px #000;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: .5rem;
+}
+
+.typingHeader {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.5rem;
+  margin-top: .3rem;
+  
+}
+
+.typingPic {
+  height: 8rem;
+  margin: .5rem;
+  
+}
+
+.typingText {
+  position: relative;
+  margin-left: .5rem;
+}
+
+
+/* chess */
+
+.chessWrapper {
+  color: white;
+  border: 1px solid white;
+  border-radius: 0 20px 0 20px;
+  display: inline-block;
+  background-color: rgb(207, 143, 3);
+  text-shadow: 2px 2px #000;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: .5rem;
+}
+
+.chessHeader {
+  font-size: 1.5rem;
+  display: block;
+  margin-left: 2rem;
+}
+
+.chessPic {
+  height: 8rem;
+  display: block;
+  margin: auto;
+}
+
+.chessText {
+  font-size: .9rem;
+  margin: .2rem;
+}
+
+/* Esport & Gaming */
+.EGWrapper {
+  color: white;
+  border: 1px solid white;
+  box-shadow: 1px 1px black;
+  width: 95vw;
+  text-shadow: 1px 1px #000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  gap: 1rem;
+  background-color: rgb(43, 40, 40);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.EGHeader {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  margin-top: .3rem;
+}
+
+.EGText, .EGText2 {
+  margin: .2rem;
+}
+
+/* sec4 */
+.sec4 {
+  background: linear-gradient(#4a00e0, #8e2de2);
+  height: auto;
+}
+
+.sec4Heading {
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 1rem;
+}
+
+.sec4Grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  gap: .3rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:visited {
+  color: rgb(253, 209, 10);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* fav songs */
+
+.hr {
+  width: 90%;
+}
+
+.songWrapper {
+  border: 1px solid black;
+  border-radius: 30px;
+  background: linear-gradient(rgb(116, 1, 1), #111);
+  grid-column: 1/5;
+}
+
+.songHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+}
+
+.songHeading2 {
+  margin: 1rem;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.spotifyPic {
+  height: 3rem;
+}
+
+.songList {
+  color: white;
+  font-size: 1rem;
+}
+
+.songButton {
+  background-color: rgb(73, 231, 73);
+  border-radius: 50px;
+  padding: .5rem;
+  margin-bottom: .2rem;
+  box-shadow: none;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.1rem;
+
+}
+
+/* speeches */
+
+.speechWrapper {
+  grid-row: 2/3;
+  grid-column:3/7;
+  border: 1px solid black;
+  border-radius: 30px 0px 0px 30px;
+  background: linear-gradient(#141e30,#243b55);
+  display: grid;
+  grid-template-columns: 80% 10% 10%;
+  grid-template-rows: auto;
+  
+  
+}
+
+.speechHeading {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  
+}
+
+.el2 {
+  display: flex;
+  align-self: center;
+}
+
+.speechContent {
+  margin-left: -1.5rem;
+  font-size: 1rem;
+  align-self: center;
+}
+
+/* books */
+
+.bookWrapper {
+  grid-row: 3/4;
+  grid-column: 1/7;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  border: 1px solid black;
+  background: linear-gradient(#c23b3e, #f9d423);
+}
+
+.bookHeading {
+  font-size: 1.3rem;
+  grid-column: 1/3;
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 2px black;
+}
+
+.bookText {
+  grid-column: 4/7;
+  color: white;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px rgb(201, 24, 24);
+  margin-left: .5rem;
+}
+
+.bookEL1, .bookEL2, .bookEL3 {
+  text-align: center;
+  margin-top: .5rem;
+  padding: .5rem;
+}
+
+.bookEL1 {
+  grid-column: 1/3; 
+  background-color: #e8dfce;
+  
+}
+
+.bookEL2 {
+  grid-column: 3/5;
+  background-color: #b65149;
+  color: white;
+}
+
+.bookEL3 {
+  grid-column: 5/7;
+  background-color: #7e8e65;
+}
+
+.bookPic1, .bookPic2, .bookPic3 {
+  height: 9rem;
+  margin: auto;
+}
+
+.bookPic1Wrapper {
+  grid-column: 1/3;
+  background-color: #e8dfce;
+  display: flex;
+}
+
+.bookPic2Wrapper {
+  grid-column: 3/5;
+  background-color: #b65149;
+  display: flex;
+}
+
+.bookPic3Wrapper {
+  grid-column: 5/7;
+  background-color: #7e8e65;
+  display: flex;
+}
+
+/* blog */
+
+.blogWrapper {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  border: 1px solid black;
+  color: white;
+  background-color: #111;
+  opacity: .85;
+  
+}
+
+.headerBlogContainer {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -100%);
+}
+
+.blogLink {
+  margin-top: 2rem;
+}
+
+/* qoute */
+
+.quoteWrapper {
+  grid-column: 5/8;
+  text-align: center;
+  padding: .2rem;
+  color: black;
+  font-family: "Source Code Pro", monospace;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  border-radius: 30px 0 0 30px;
+  border: 1px solid white;
+  opacity: .9;
+}

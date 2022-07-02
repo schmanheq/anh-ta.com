@@ -663,7 +663,7 @@ a {
 
   .sec3ALT {
     font-family: "Source Code Pro", monospace;
-    height: 140vh;
+    height: 145vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: minmax(5%, auto); 
@@ -713,6 +713,9 @@ a {
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     padding: .5rem;
     color: rgb(185, 179, 179);
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
   }
 
   /* chess */
@@ -722,7 +725,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(2rem, 3vw, 3rem);
     font-family: "Permanent Marker", cursive;
     grid-column: 4/6;
     grid-row: 1/5;
@@ -736,9 +739,12 @@ a {
     grid-row: 5/7;
     text-align: right;
     background-color: #ddc6b6;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 2rem);
     border-bottom: 5px solid white;
     border-left: 5px solid white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
   }
 
   .chessLink {
@@ -768,7 +774,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: clamp(.9rem, 1vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
     grid-column: 1/6;
     background-color: #072c50;
     color: white;
@@ -794,7 +800,6 @@ a {
     grid-row: 13/15;
     font-family: "Permanent Marker", cursive;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
-    max-width: 800px;
     margin: 1rem;
     
   }
@@ -803,6 +808,7 @@ a {
     display: flex;
     justify-content: center;
     color: #050505;
+    font-size: clamp(1rem, 1vw, 2rem);
   }
   
   .hashEL2 {
@@ -891,6 +897,7 @@ a {
   .bookWrapper {
     background: linear-gradient(#c23b3e, #fffb29);
     border: none;
+    height: 50vh;
   }
 
   .songWrapper {
@@ -1075,7 +1082,7 @@ margin-bottom: 1rem;
 
 .sec3ALT {
   font-family: "Source Code Pro", monospace;
-  height: 140vh;
+  height: 185vh;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-auto-rows: minmax(5%, auto); 
@@ -1114,7 +1121,7 @@ margin-bottom: 1rem;
 }
 
 .typing2Header {
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 3rem);
   font-family: "Permanent Marker", cursive;
   display: flex;
   justify-content: center;
@@ -1122,9 +1129,11 @@ margin-bottom: 1rem;
 }
 
 .typing2Text {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 2rem);
   padding: .5rem;
   color: rgb(185, 179, 179);
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* chess */
@@ -1134,7 +1143,7 @@ margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 4vw, 5rem);
   font-family: "Permanent Marker", cursive;
   grid-column: 4/6;
   grid-row: 1/5;
@@ -1148,9 +1157,18 @@ margin-bottom: 1rem;
   grid-row: 5/7;
   text-align: right;
   background-color: #ddc6b6;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  display: flex;
+  justify-content: right;
+  align-items: center;
   border-bottom: 5px solid white;
   border-left: 5px solid white;
+}
+
+.chessLink {
+  color: rgb(255, 238, 6);
+  text-shadow: .5px .5px black;
+  font-weight: 600;
 }
 
 /* eg */
@@ -1160,7 +1178,7 @@ margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(3rem, 3vw, 5rem);
   grid-row: 9/10;
   grid-column: 1/6;
   font-family: "Permanent Marker", cursive;
@@ -1174,7 +1192,7 @@ margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: clamp(.9rem, 1vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   grid-column: 1/6;
   background-color: #072c50;
   color: white;
@@ -1294,20 +1312,53 @@ margin-bottom: 1rem;
   padding: .2rem;
 
 }
-
+/* books */
 .bookWrapper {
   background: linear-gradient(#c23b3e, #fffb29);
   border: none;
+  height: 50vh;
 }
 
+.bookHeading {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.bookText {
+  display: flex;
+  margin-left: 2rem;
+  font-size: clamp(1.4rem, 1.5vw, 2.5rem);
+  align-items: center;
+}
+
+
+/* songs */
 .songWrapper {
   grid-column: 1/4;
 }
 
+
+.songHeading2 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+
+/* speeches */
 .speechWrapper {
   border-radius: 0px;
 }
 
+.speechContent {
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+/* blog */
+
+.blogWrapper {
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+
+/* qoute */
 .qouteWrapper {
   display: flex;
   justify-content: center;
@@ -1317,6 +1368,7 @@ margin-bottom: 1rem;
   border-radius: 10px 0 0 10px;
   border: 1px solid black;
   background-color: #ddbebc;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 

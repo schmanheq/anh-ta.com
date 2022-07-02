@@ -134,6 +134,8 @@ body {
 
 /*sec3*/
 
+
+
 /* sec3 heading */
 .sec3Heading {
   font-size: 1.5rem;
@@ -213,6 +215,7 @@ body {
 
 .chessLink {
   text-shadow: none;
+  color: #111;
 }
 
 /* Esport & Gaming */
@@ -272,6 +275,7 @@ a:visited {
 }
 
 a {
+  color: rgb(253, 209, 10);
   text-decoration: none;
 }
 
@@ -470,12 +474,22 @@ a {
   opacity: .9;
 }
 
+/* alternative Secs */
 
 .sec1ALT {
   display: none;
 }
 
 .sec2ALT {
+  display: none;
+}
+
+.sec3ALT {
+  display: none;
+}
+
+
+.sec4ALT {
   display: none;
 }
 
@@ -540,6 +554,7 @@ a {
     font-size: 5rem;
     text-shadow: none;
     grid-column: 1/4;
+    text-shadow: 2.5px 2.5px grey;
   }
 
   .text {
@@ -586,9 +601,14 @@ a {
   }
 
   .sec2ALTHeading {
-    position: absolute;
-    right: 0;
-    margin-right: 1rem;
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    top: 0;
+    margin-left: 1rem;
+    text-shadow: 2.5px 2.5px grey;
+    
+    
   }
 
   .sec2ALTContent {
@@ -635,6 +655,258 @@ a {
     font-size: clamp(2rem, 2vw, 3rem);
   }
 
+  /*sec3*/
+
+  .sec3 {
+    display: none;
+  }
+
+  .sec3ALT {
+    font-family: "Source Code Pro", monospace;
+    height: 140vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(5%, auto); 
+    background-color: white;
+  }
+
+  .el1sec3 {
+    background-color: rgb(219, 58, 58);
+  }
+
+  .sec3Heading {
+    font-family: "Permanent Marker", cursive;
+    font-size: clamp(2rem, 5vw, 5rem);
+    margin: 2rem;
+    position: sticky;
+    top: 0;
+  }
+
+  .sec3Grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(10%, auto);
+    
+  }
+
+  /* typing */
+
+  .typing2Wrapper {
+    grid-column: 1/4;
+    grid-row: 1/5;
+    border: 1px solid black;
+    font-size: clamp(.9rem, 1vw, 1.5rem);
+    background-color: rgb(37, 35, 35);
+    border-bottom: 5px solid white;
+    
+  }
+
+  .typing2Header {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-family: "Permanent Marker", cursive;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 123, 0);
+  }
+
+  .typing2Text {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    padding: .5rem;
+    color: rgb(185, 179, 179);
+  }
+
+  /* chess */
+
+  .chess2Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-family: "Permanent Marker", cursive;
+    grid-column: 4/6;
+    grid-row: 1/5;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    background-color: #ddc6b6;
+  }
+
+  .chess2Content {
+    grid-column: 2/6;
+    grid-row: 5/7;
+    text-align: right;
+    background-color: #ddc6b6;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+  }
+
+  .chessLink {
+    color: rgb(255, 238, 6);
+    text-shadow: .5px .5px black;
+    font-weight: 600;
+  }
+
+  /* eg */
+
+  .eg2Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(2rem, 2vw, 3rem);
+    grid-row: 9/10;
+    grid-column: 1/6;
+    font-family: "Permanent Marker", cursive;
+    background-color: #072c50;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+  }
+
+  .eg2Content, .eg2Content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(.9rem, 1vw, 1.5rem);
+    grid-column: 1/6;
+    background-color: #072c50;
+    color: white;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+  }
+
+  .eg2Content {
+    grid-row: 7/9;
+    border-top: 5px solid orange;
+  }
+
+  .eg2Content2 {
+    grid-row: 10/13;
+    border-bottom: 5px solid orange;
+  }
+
+  .hashtags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(5%, auto);
+    grid-column: 1/6;
+    grid-row: 13/15;
+    font-family: "Permanent Marker", cursive;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    max-width: 800px;
+    margin: 1rem;
+    
+  }
+  
+  .hashEL1 {
+    display: flex;
+    justify-content: center;
+    color: #050505;
+  }
+  
+  .hashEL2 {
+    grid-row: 5/6;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #013dc4;
+  }
+  
+  
+  
+  .hashEL3 {
+    grid-column: 2/4;
+    grid-row: 3/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9c07b;
+  }
+  
+  .hashEL4 {
+    grid-column: 2/4;
+    grid-row: 6/7;
+    color: #aa96da;
+  }
+  
+  .hashEL5 {
+    grid-row: 11/12;
+    grid-column: 1/4;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    color: #ff1e27;
+  }
+  
+  .hashEL6 {
+    grid-row: 13/14;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: right;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    color: #4a171e;
+  }
+  
+  .hashEL3, .hashEL2 {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+  }
+
+  /* sec4 */
+  .sec4 {
+    display: none;
+  }
+
+  .sec4ALT {
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Permanent Marker", cursive;
+  }
+
+  .el1Sec4 {
+    background: linear-gradient(#4a00e0, #8e2de2);
+    font-family: "Permanent Marker", cursive;
+    font-size: clamp(2rem, 5vw, 5rem);
+  }
+
+  .el2Sec4 {
+    background: linear-gradient(#0cebeb,#20e3b2, #29ffc6);
+  }
+
+  .sec4AltHeading {
+    position: sticky;
+    top: 0;
+    margin: 2rem;
+  }
+
+  .sec4ALTGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(5%, auto);
+    height: 100vh;
+    margin-top: 2rem;
+    padding: .2rem;
+
+  }
+
+  .bookWrapper {
+    background: linear-gradient(#c23b3e, #fffb29);
+    border: none;
+  }
+
+  .songWrapper {
+    grid-column: 1/6;
+  }
+
+  .speechWrapper {
+    border-radius: 0px;
+  }
+
+  .qouteWrapper {
+    display: none;
+  }
+
+
+
 }
 
 @media screen and (min-width: 1151px) {
@@ -665,7 +937,7 @@ max-width: 400px;
 }
 
 .thatsMe {
-background: linear-gradient(180deg,h#833ab4, #fd1d1d, #fcb045);
+background: linear-gradient(#833ab4, #fd1d1d, #fcb045);
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
 text-shadow: none;
@@ -696,6 +968,7 @@ color: #000000;
 font-size: 5rem;
 text-shadow: none;
 grid-column: 1/4;
+text-shadow: 2px 2px grey;
 }
 
 .text {
@@ -742,9 +1015,12 @@ margin-bottom: 1rem;
 }
 
 .sec2ALTHeading {
-  position: absolute;
-  right: 0;
+  display: flex;
+  justify-content: right;
+  position: sticky;
+  top: 0;
   margin-right: 1rem;
+  text-shadow: 2.5px 2.5px grey;
 }
 
 .sec2ALTContent {
@@ -790,6 +1066,259 @@ margin-bottom: 1rem;
   text-align: center;
   font-size: clamp(2rem, 2vw, 3rem);
 }
+
+/*sec3*/
+
+.sec3 {
+  display: none;
+}
+
+.sec3ALT {
+  font-family: "Source Code Pro", monospace;
+  height: 140vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(5%, auto); 
+  background-color: white;
+}
+
+.el1sec3 {
+  background-color: rgb(219, 58, 58);
+}
+
+.sec3Heading {
+  font-family: "Permanent Marker", cursive;
+  font-size: clamp(2rem, 5vw, 5rem);
+  margin: 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.sec3Grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(10%, auto);
+  
+}
+
+/* typing */
+
+.typing2Wrapper {
+  grid-column: 1/4;
+  grid-row: 1/5;
+  border: 1px solid black;
+  font-size: clamp(.9rem, 1vw, 1.5rem);
+  background-color: rgb(37, 35, 35);
+  border-bottom: 5px solid white;
+  
+}
+
+.typing2Header {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 123, 0);
+}
+
+.typing2Text {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  padding: .5rem;
+  color: rgb(185, 179, 179);
+}
+
+/* chess */
+
+.chess2Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-family: "Permanent Marker", cursive;
+  grid-column: 4/6;
+  grid-row: 1/5;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  background-color: #ddc6b6;
+}
+
+.chess2Content {
+  grid-column: 2/6;
+  grid-row: 5/7;
+  text-align: right;
+  background-color: #ddc6b6;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+}
+
+/* eg */
+
+.eg2Heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(2rem, 2vw, 3rem);
+  grid-row: 9/10;
+  grid-column: 1/6;
+  font-family: "Permanent Marker", cursive;
+  background-color: #072c50;
+  border-left: 5px solid orange;
+  border-right: 5px solid orange;
+}
+
+.eg2Content, .eg2Content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(.9rem, 1vw, 1.5rem);
+  grid-column: 1/6;
+  background-color: #072c50;
+  color: white;
+  border-left: 5px solid orange;
+  border-right: 5px solid orange;
+}
+
+.eg2Content {
+  grid-row: 7/9;
+  border-top: 5px solid orange;
+}
+
+.eg2Content2 {
+  grid-row: 10/13;
+  border-bottom: 5px solid orange;
+}
+
+.hashtags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  grid-column: 1/6;
+  grid-row: 13/15;
+  font-family: "Permanent Marker", cursive;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  max-width: 800px;
+  margin: 1rem;
+  
+}
+
+.hashEL1 {
+  display: flex;
+  justify-content: center;
+  color: #050505;
+}
+
+.hashEL2 {
+  grid-row: 5/6;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #013dc4;
+}
+
+
+
+.hashEL3 {
+  grid-column: 2/4;
+  grid-row: 3/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9c07b;
+}
+
+.hashEL4 {
+  grid-column: 2/4;
+  grid-row: 6/7;
+  color: #aa96da;
+}
+
+.hashEL5 {
+  grid-row: 11/12;
+  grid-column: 1/4;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  color: #ff1e27;
+}
+
+.hashEL6 {
+  grid-row: 13/14;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: right;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  color: #4a171e;
+}
+
+.hashEL3, .hashEL2 {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+/* sec4 */
+
+.sec4 {
+  display: none;
+}
+
+.sec4ALT {
+  display: grid;
+  height: 120vh;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Permanent Marker", cursive;
+}
+
+.el1Sec4 {
+  background: linear-gradient(#4a00e0, #8e2de2);
+  font-family: "Permanent Marker", cursive;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.el2Sec4 {
+  background: linear-gradient(#0cebeb,#20e3b2, #29ffc6);
+}
+
+.sec4AltHeading {
+  position: sticky;
+  top: 0;
+  margin: 2rem;
+}
+
+.sec4ALTGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(5%, auto);
+  height: 100vh;
+  margin-top: 2rem;
+  padding: .2rem;
+
+}
+
+.bookWrapper {
+  background: linear-gradient(#c23b3e, #fffb29);
+  border: none;
+}
+
+.songWrapper {
+  grid-column: 1/4;
+}
+
+.speechWrapper {
+  border-radius: 0px;
+}
+
+.qouteWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 4/6;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid black;
+  background-color: #ddbebc;
+}
+
 
 
 }

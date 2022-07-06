@@ -1,3 +1,4 @@
+/* scroll appear animation */ 
 function reveal() {
     var reveals = document.querySelectorAll(".js-scroll");
   
@@ -16,3 +17,12 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 reveal();
+
+
+function dissapear() {
+  var i = true;
+  var wrapper = document.querySelector(".noticeWindow");
+  if (i) {
+     wrapper.style.display = "none";
+  }
+}

@@ -21,8 +21,16 @@ reveal();
 
 function dissapear() {
   var i = true;
+  var sec1 = document.querySelector(".sec1");
+  var sec2 = document.querySelector(".sec2");
+  var sec3 = document.querySelector(".sec3");
+  var sec4 = document.querySelector(".sec4")
   var wrapper = document.querySelector(".noticeWindow");
   if (i) {
      wrapper.style.display = "none";
+     sec1.style.filter = "none";
+     sec2.style.filter = "none";
+     sec3.style.filter = "none";
+     sec4.style.filter = "none";
   }
 }

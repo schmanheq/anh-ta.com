@@ -153,12 +153,12 @@ body {
   
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-auto-rows: minmax(5%, auto);
   gap: 1rem;
 }
 
-.hvh {
+.hvh, .uni {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -691,17 +691,15 @@ a {
     width: 90%;
     margin: auto;
     margin-top: 5rem;
-    border: 1px solid black;
-    border-radius: 0 10px 0 10px;
     padding-left: .5rem;
   }
 
-  .hvh2 {
+  .hvh2, .uni2 {
     font-size: clamp(1.5rem, 2vw, 5rem);
     font-weight: 600;
   }
 
-  .hvhContent {
+  .hvhContent, .uniContent {
     font-size: clamp(1.2rem, 1vw, 2rem);
   }
 

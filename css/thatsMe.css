@@ -635,6 +635,8 @@ a {
   .graduatedPic {
     display: block;
     margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
     width: 85%;
     grid-column: 1/4;
     margin-top: -4rem;
@@ -683,6 +685,7 @@ a {
 
   .sec2ALTMainGrid {
     display: grid;
+    border: none;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(5%, auto);
   }
@@ -1085,6 +1088,8 @@ grid-column: 1/4;
 .graduatedPic {
 display: block;
 margin: auto;
+border: 1px solid black;
+border-radius: 10px;
 height: 20rem;
 grid-column: 1/4;
 margin-top: -5rem;
@@ -1136,17 +1141,15 @@ margin-bottom: 1rem;
   width: 90%;
   margin: auto;
   margin-top: 5rem;
-  border: 1px solid black;
-  border-radius: 0 10px 0 10px;
   padding-left: .5rem;
 }
 
-.hvh2 {
+.hvh2, .uni2 {
   font-size: clamp(1.5rem, 2vw, 5rem);
   font-weight: 600;
 }
 
-.hvhContent {
+.hvhContent, .uniContent {
   font-size: clamp(1.2rem, 1vw, 2rem);
 }
 

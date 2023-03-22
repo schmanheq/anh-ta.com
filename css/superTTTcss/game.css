@@ -1,0 +1,18 @@
+#gameWrapper {
+    width: 800px;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gridline {
+    border: 2px solid black;
+    position: relative;
+    padding: 10px;
+}
+
+.top {border-top: none;}
+.bottom {border-bottom: none;}
+.left {border-left: none;}
+.right{border-right: none;}
